@@ -39,9 +39,9 @@ h2 {
 }
 </style>
 <body>
- <h1>Cures &amp; Curios</h1>
+ <div><img id="vive" src="/assets/vive-sm.png"></img><h1>Cures &amp; Curios</h1><img id="vive" src="/assets/vive-sm.png"></img></div>
  <h2 id="flavourtext"><em>Coming soon to a Vive near you!</em></h2>
- <!--<img src="assets/vive-sm.png"></img>-->
+<img id="vive" src="/assets/vive-sm.png"></img>
 </body>
 <script>
 var current = 0;
@@ -52,9 +52,14 @@ setInterval(function() {
 	var ms = new Date().getTime();
 	var fluc = Math.sin(ms / 500) * 5;
 	var fluc2 = Math.sin(ms / 500) * 10;
+	var fluc3 = Math.sin(ms / 50) * 50;
+	var fluc4 = Math.sin(ms / 20) * 50;
 	console.log(fluc);
 	document.getElementById("flavourtext").style.transform = "rotate(" + (base_angle + fluc2 + current) + "deg)";
 	document.getElementById("flavourtext").style.fontSize = "" + (base_size + fluc) + "em";
+	document.getElementById("vive").style.transform = "rotate(" + ((base_angle + fluc2 + current) / 20) + "deg)";
+	document.getElementById("vive").style.width = "" + (200 + fluc3 * 5) + "px";
+	document.getElementById("vive").style.height = "" + (200 + fluc4 * 5) + "px";
 }, 20);
 </script>
 </html>

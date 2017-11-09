@@ -18,17 +18,38 @@
 
 
 
-.st-font-lore {
+.st-font-regular {
   font-family: 'Spellbook', Verdana, sans-serif;
-  font-size: 1.175em;
+  font-size: 2em;
+  line-height: 40px;
 }
 
-.st-font-quote {
+.st-font-italics {
   font-family: 'SpellbookItalic', Verdana, sans-serif;
-  font-size: 1.25em;
+  font-size: 2em;
+  line-height: 40px;
 }
 
 .st-font-title {
   font-family: 'STTitles', Verdana, sans-serif;
-  font-size: 4em;
+  font-size: 4.5em;
+  line-height: 70px;
+}
+
+.st-font-copyright {
+    font-family: 'Spellbook', Verdana, sans-serif;
+    font-size: 1.25em;
+    line-height: 20px;
+}
+
+.st-font-lore-title {
+    font-family: 'SpellbookItalic', Verdana, serif;
+    font-size: 4.5em;
+    line-height: 75px;
+}
+
+.st-font-sub {
+    font-family: 'STTitles', Verdana, sans-serif;
+    font-size: 1.75em;
+    line-height: 20px;
 }

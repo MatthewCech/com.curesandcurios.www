@@ -30,6 +30,12 @@
   line-height: 40px;
 }
 
+.st-font-coming-soon {
+    font-family: 'SpellbookItalic', Verdana, sans-serif;
+    font-size: 3em;
+    line-height: 50px;
+}
+
 .st-font-title {
   font-family: 'STTitles', Verdana, sans-serif;
   font-size: 4.5em;
